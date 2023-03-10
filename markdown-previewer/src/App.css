@@ -1,0 +1,21 @@
+.editor-wrapper, .preview-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.editor-wrapper textarea {
+    font-size: medium;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    min-height: 200px;
+}
+
+.preview-wrapper #preview {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    min-height: 500px;
+    padding: 1rem;
+    font-size: medium;
+}
