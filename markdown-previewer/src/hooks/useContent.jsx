@@ -1,15 +1,14 @@
-import { useState } from "react";
-import { parse } from 'marked';
+import { useState } from 'react'
+import { parse } from 'marked'
 
-export default function useContent(intialContent) {
+export default function useContent (intialContent) {
+  const [content, setContent] = useState(intialContent || '')
 
-    const [ content, setContent ] = useState(intialContent || '')
+  const parsedContent = parse(content)
 
-    const parsedContent = parse(content);
-
-    return {
-        content,
-        parsedContent,
-        onContentChange: (event) => setContent(event.target.value)
-    }
+  return {
+    content,
+    parsedContent,
+    onContentChange: (event) => setContent(event.target.value)
+  }
 }

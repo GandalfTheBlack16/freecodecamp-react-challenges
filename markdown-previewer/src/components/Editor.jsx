@@ -1,15 +1,15 @@
 
 export default function Editor ({ content, onContentChange }) {
-    return (
+  return (
         <div className="editor-wrapper">
             <div className="toolbar">
                 <span>Editor</span>
             </div>
-            <textarea 
+            <textarea
                 id="editor"
                 value={content}
                 onChange={onContentChange}>
             </textarea>
         </div>
-    )
+  )
 }

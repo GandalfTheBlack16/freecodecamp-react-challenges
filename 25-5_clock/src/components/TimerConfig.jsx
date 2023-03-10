@@ -1,30 +1,29 @@
 import { FaAngleUp, FaAngleDown } from 'react-icons/fa'
 
-export default function TimerConfig({
-    label, 
-    identifier, 
-    timerValue, 
-    onIncrement, 
-    onDecrement,
-    btnDisabledCondition
+export default function TimerConfig ({
+  label,
+  identifier,
+  timerValue,
+  onIncrement,
+  onDecrement,
+  btnDisabledCondition
 }) {
-    
-    return (
-        <div className="timerConfig__container"> 
-            <h3 
+  return (
+        <div className="timerConfig__container">
+            <h3
                 id={`${identifier}-label`}
                 className="timerConfig__label">
                     {label}
             </h3>
             <div className="timerConfig__controls">
-                <button 
+                <button
                     id={`${identifier}-increment`}
                     disabled={btnDisabledCondition}
                     onClick={onIncrement}>
                         <FaAngleUp />
                 </button>
                 <div id={`${identifier}-length`}>{timerValue}</div>
-                <button 
+                <button
                     id={`${identifier}-decrement`}
                     disabled={btnDisabledCondition}
                     onClick={onDecrement}>
@@ -32,5 +31,5 @@ export default function TimerConfig({
                 </button>
             </div>
         </div>
-    )
+  )
 }

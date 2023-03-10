@@ -7,32 +7,31 @@ const SESSION_DEFAULT_LENGTH = 25
 const BREAK_DEFAULT_LENGTH = 5
 
 export default function Timer () {
+  const {
+    sessionTimer,
+    breakTimer,
+    incrementSession,
+    decrementSession,
+    incrementBreak,
+    decrementBreak,
+    resetTimers,
+    currentTimer,
+    isRunning,
+    time,
+    play,
+    pause
+  } = useTimer({
+    initSessionTime: SESSION_DEFAULT_LENGTH * 60,
+    initBreakTime: BREAK_DEFAULT_LENGTH * 60
+  })
 
-    const {
-        sessionTimer,
-        breakTimer,
-        incrementSession,
-        decrementSession,
-        incrementBreak,
-        decrementBreak,
-        resetTimers,
-        currentTimer,
-        isRunning,
-        time,
-        play,
-        pause
-    } = useTimer({ 
-        initSessionTime: SESSION_DEFAULT_LENGTH * 60,
-        initBreakTime: BREAK_DEFAULT_LENGTH * 60 
-    })
+  const capitalizedCurrentTimer = currentTimer.charAt(0).toUpperCase() + currentTimer.slice(1)
+  const finalMinClass = time < 60 ? 'final-minute' : ''
 
-    const capitalizedCurrentTimer = currentTimer.charAt(0).toUpperCase() + currentTimer.slice(1)
-    const finalMinClass = time < 60 ? 'final-minute' : ''
-
-    return (
+  return (
         <>
             <div className='config_container'>
-                <TimerConfig 
+                <TimerConfig
                     identifier='session'
                     label='Session length'
                     timerValue={toMinutes(sessionTimer)}
@@ -40,7 +39,7 @@ export default function Timer () {
                     onDecrement={decrementSession}
                     btnDisabledCondition={isRunning}
                 />
-                <TimerConfig 
+                <TimerConfig
                     identifier='break'
                     label='Break length'
                     timerValue={toMinutes(breakTimer)}
@@ -57,7 +56,7 @@ export default function Timer () {
                     <div id="time-left" className={finalMinClass}>{toMMSS(time)}</div>
                 </div>
                 <div className="timer__actions">
-                    <TimerButtons 
+                    <TimerButtons
                         isRunning={isRunning}
                         onPlayHandler={play}
                         onPauseHandler={pause}
@@ -66,5 +65,5 @@ export default function Timer () {
                 </div>
             </div>
         </>
-    )
+  )
 }

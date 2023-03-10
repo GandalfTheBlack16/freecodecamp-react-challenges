@@ -1,15 +1,15 @@
 
 export default function Preview ({ content }) {
-    return (
+  return (
         <div className="preview-wrapper">
             <div className="toolbar">
                 <span>Preview</span>
             </div>
-            <div 
+            <div
                 id="preview"
                 dangerouslySetInnerHTML={{ __html: content }}
-            >     
+            >
             </div>
         </div>
-    )
+  )
 }

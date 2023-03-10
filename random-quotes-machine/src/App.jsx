@@ -2,8 +2,7 @@ import './App.css'
 import Footer from './components/Footer'
 import QuoteBox from './components/QuoteBox'
 
-function App() {
-
+function App () {
   return (
     <div className="wrapper">
       <QuoteBox />

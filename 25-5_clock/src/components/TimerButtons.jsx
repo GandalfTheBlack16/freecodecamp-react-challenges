@@ -1,14 +1,13 @@
 import { FaPlay, FaPause, FaUndoAlt } from 'react-icons/fa'
 
 export default function TimerButtons ({
-    isRunning, 
-    onPlayHandler, 
-    onPauseHandler, 
-    onResetHandler
+  isRunning,
+  onPlayHandler,
+  onPauseHandler,
+  onResetHandler
 }) {
-
-    return (
-        <>  
+  return (
+        <>
             <button
                 id='start_stop'
                 onClick={isRunning ? onPauseHandler : onPlayHandler}
@@ -22,5 +21,5 @@ export default function TimerButtons ({
                 <FaUndoAlt />
             </button>
         </>
-    )
+  )
 }

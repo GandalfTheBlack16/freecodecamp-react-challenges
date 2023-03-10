@@ -1,14 +1,13 @@
-import useQuotes from "../hooks/useQuotes"
+import useQuotes from '../hooks/useQuotes'
 
 export default function QuoteBox () {
-    
-    const {
-        quote,
-        author,
-        renewQuote
-    } = useQuotes();
+  const {
+    quote,
+    author,
+    renewQuote
+  } = useQuotes()
 
-    return (
+  return (
         <div id="quote-box">
             <div className="quote-text">
                 <i className="fa fa-quote-left"></i>
@@ -20,7 +19,7 @@ export default function QuoteBox () {
             </div>
             <div className="buttons">
                 <div className="social">
-                    <a 
+                    <a
                         className="button"
                         id="tweet-quote"
                         title="Tweet this quote!"
@@ -28,7 +27,7 @@ export default function QuoteBox () {
                         target="_blank">
                             <i className="fa fa-twitter"></i>
                     </a>
-                    <a 
+                    <a
                         className="button"
                         id="tumblr-quote"
                         title="Post this quote in tumblr!"
@@ -37,7 +36,7 @@ export default function QuoteBox () {
                         <i className="fa fa-tumblr"></i>
                     </a>
                 </div>
-                <button 
+                <button
                     className="button"
                     id="new-quote"
                     onClick={renewQuote}>
@@ -45,5 +44,5 @@ export default function QuoteBox () {
                 </button>
             </div>
         </div>
-    )
+  )
 }
