@@ -1,12 +1,27 @@
-# Random Quotes Machine
+# React challenges
 
-> React App that shows random quotes and allow user to share it on Social Networks
+For freeCodeCamp's __Front End Development Libraries__ - https://www.freecodecamp.org/learn/front-end-development-libraries/
 
-This is a sample application to accomplish a [freeCodeCamp's](https://www.freecodecamp.org/learn/) challenge:
+## Random Quote Machine
 
-https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-random-quote-machine
+React App that shows random quotes and allow user to share it on Social Networks
 
-## Published app
+<ins>Source:</ins> https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-random-quote-machine
 
-This app is currently published on Vercel: https://random-quote-machine-beryl.vercel.app/
+## Markdown Previewer
 
+React App that allows you to preview MD content
+
+<ins>Source:</ins> https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-markdown-previewer
+
+## Javascript calculator
+
+Interactive calculator with React
+
+<ins>Source:</ins> https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-javascript-calculator
+
+## 25 + 5 Clock
+
+Configurable 2-stages clock with React
+
+<ins>Source:</ins> https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-25--5-clock
