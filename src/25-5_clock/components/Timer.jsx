@@ -30,41 +30,45 @@ export default function Timer () {
   const finalMinClass = time < 60 ? 'final-minute' : ''
 
   return (
-    <div className='timer__wrapper'>
-      <div className='config_container'>
-        <TimerConfig
-          identifier='session'
-          label='Session length'
-          timerValue={toMinutes(sessionTimer)}
-          onIncrement={incrementSession}
-          onDecrement={decrementSession}
-          btnDisabledCondition={isRunning}
-        />
-        <TimerConfig
-          identifier='break'
-          label='Break length'
-          timerValue={toMinutes(breakTimer)}
-          onIncrement={incrementBreak}
-          onDecrement={decrementBreak}
-          btnDisabledCondition={isRunning}
-        />
-      </div>
-      <div className='timer__container'>
-        <div className='timer__content'>
-          <div>
-            <h3 id='timer-label' className={finalMinClass}>{capitalizedCurrentTimer}</h3>
-          </div>
-          <div id='time-left' className={finalMinClass}>{toMMSS(time)}</div>
-        </div>
-        <div className='timer__actions'>
-          <TimerButtons
-            isRunning={isRunning}
-            onPlayHandler={play}
-            onPauseHandler={pause}
-            onResetHandler={resetTimers}
+    <div>
+      <h2>25/5 Clock</h2>
+      <div className='timer__wrapper'>
+        <div className='config_container'>
+          <TimerConfig
+            identifier='session'
+            label='Session length'
+            timerValue={toMinutes(sessionTimer)}
+            onIncrement={incrementSession}
+            onDecrement={decrementSession}
+            btnDisabledCondition={isRunning}
+          />
+          <TimerConfig
+            identifier='break'
+            label='Break length'
+            timerValue={toMinutes(breakTimer)}
+            onIncrement={incrementBreak}
+            onDecrement={decrementBreak}
+            btnDisabledCondition={isRunning}
           />
         </div>
+        <div className='timer__container'>
+          <div className='timer__content'>
+            <div>
+              <h3 id='timer-label' className={finalMinClass}>{capitalizedCurrentTimer}</h3>
+            </div>
+            <div id='time-left' className={finalMinClass}>{toMMSS(time)}</div>
+          </div>
+          <div className='timer__actions'>
+            <TimerButtons
+              isRunning={isRunning}
+              onPlayHandler={play}
+              onPauseHandler={pause}
+              onResetHandler={resetTimers}
+            />
+          </div>
+        </div>
       </div>
+
     </div>
   )
 }

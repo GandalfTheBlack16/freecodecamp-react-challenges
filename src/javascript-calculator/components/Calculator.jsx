@@ -8,17 +8,21 @@ export default function Calculator () {
 
   return (
     <div className='wrapper'>
-      <div id='display'>{displayContent}</div>
-      {keyMap.map(item => {
-        return (
-          <Key
-            id={item.id}
-            key={item.id}
-            number={item.number}
-            handleClick={handle(item.handler)}
-          />
-        )
-      })}
+      <h2>Javascript calculator</h2>
+      <div className='calculator__wrapper'>
+        <div id='display'>{displayContent}</div>
+        {keyMap.map(item => {
+          return (
+            <Key
+              id={item.id}
+              key={item.id}
+              number={item.number}
+              handleClick={handle(item.handler)}
+            />
+          )
+        })}
+      </div>
+
     </div>
   )
 }

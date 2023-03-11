@@ -9,8 +9,8 @@ export default function MarkdownPreviewer () {
 
   return (
     <div>
-      <h1>Markdown previewer</h1>
-      <main className='wrapper'>
+      <h2>Markdown previewer</h2>
+      <main>
         <Editor
           onContentChange={onContentChange}
           content={content}

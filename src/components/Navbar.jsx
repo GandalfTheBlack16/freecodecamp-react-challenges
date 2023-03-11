@@ -4,7 +4,11 @@ import './Navbar.css'
 export default function Navbar ({ selected }) {
   return (
     <nav className='app__navbar'>
-      <span className='navbar__title'>FreecodeCamp React Challenges</span>
+      <Link
+        to='/'
+      >
+        <span className='navbar__title'>FreecodeCamp React Challenges</span>
+      </Link>
       <div className='navbar__sections'>
         <div>
           <Link

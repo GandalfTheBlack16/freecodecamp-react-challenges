@@ -9,22 +9,24 @@ function App () {
   return (
     <div className='App'>
       <Navbar />
-      <Router
-        routes={ROUTES}
-        defaultComponent={MainComponent}
-      >
-        {
-          ROUTES.map(route => {
-            return (
-              <Route
-                key={route.id}
-                path={route.path}
-                Component={route.component}
-              />
-            )
-          })
-        }
-      </Router>
+      <main>
+        <Router
+          routes={ROUTES}
+          defaultComponent={MainComponent}
+        >
+          {
+            ROUTES.map(route => {
+              return (
+                <Route
+                  key={route.id}
+                  path={route.path}
+                  Component={route.component}
+                />
+              )
+            })
+          }
+        </Router>
+      </main>
       <Footer />
     </div>
   )
