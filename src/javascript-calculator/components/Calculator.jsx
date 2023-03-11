@@ -1,7 +1,7 @@
-import Key from './Key'
-import './Calculator.css'
 import useCalculator from '../hooks/useCalculator'
-import { keyMap } from './keymap.js'
+import Key from './Key'
+import { keyMap } from '../../shared/utils/constants'
+import './Calculator.css'
 
 export default function Calculator () {
   const { displayContent, handle } = useCalculator()

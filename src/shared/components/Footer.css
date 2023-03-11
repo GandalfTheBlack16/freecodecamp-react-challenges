@@ -5,5 +5,12 @@
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 20em;
+}
+
+@media (max-width: 1400px) {
+    .footer {
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }       
 }
