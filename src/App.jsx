@@ -1,12 +1,12 @@
 import Footer from './components/Footer'
 import './App.css'
-import Calculator from './javascript-calculator/components/Calculator'
+import Timer from './25-5_clock/components/Timer'
 
 function App () {
   return (
     <div className='App'>
       <h1>FreecodeCamp React Challenges</h1>
-      <Calculator />
+      <Timer />
       <Footer />
     </div>
   )
