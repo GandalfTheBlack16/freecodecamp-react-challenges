@@ -5,9 +5,9 @@ import Calculator from './javascript-calculator/components/Calculator'
 import Timer from './25-5_clock/components/Timer'
 
 export const ROUTES = [
-  { path: '/', component: MainComponent },
-  { path: '/quotes', component: QuotesMachine },
-  { path: '/markdown', component: MarkdownPreviewer },
-  { path: '/calculator', component: Calculator },
-  { path: '/clock', component: Timer }
+  { id: 0, path: '/', Component: MainComponent },
+  { id: 1, path: '/quotes', Component: QuotesMachine },
+  { id: 2, path: '/markdown', Component: MarkdownPreviewer },
+  { id: 3, path: '/calculator', Component: Calculator },
+  { id: 4, path: '/clock', Component: Timer }
 ]

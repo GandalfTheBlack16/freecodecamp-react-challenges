@@ -1,6 +1,5 @@
-
 export default function MainComponent () {
   return (
-    <h1>This is the main component</h1>
+    <h1>This is my main component</h1>
   )
 }

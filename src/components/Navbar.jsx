@@ -1,3 +1,4 @@
+import { Link } from 'midu-router'
 import './Navbar.css'
 
 export default function Navbar ({ selected }) {
@@ -6,16 +7,28 @@ export default function Navbar ({ selected }) {
       <span className='navbar__title'>FreecodeCamp React Challenges</span>
       <div className='navbar__sections'>
         <div>
-          <a href='/quotes'>Quotes Machine</a>
+          <Link
+            to='/quotes'
+          >Quotes Machine
+          </Link>
         </div>
         <div>
-          <a href='/markdown'>Markdown previewer</a>
+          <Link
+            to='/markdown'
+          >Markdown previewer
+          </Link>
         </div>
         <div>
-          <a href='/calculator'>Javascript calculator</a>
+          <Link
+            to='/calculator'
+          >Javascript calculator
+          </Link>
         </div>
         <div>
-          <a href='/clock'>25/5 Clock</a>
+          <Link
+            to='/clock'
+          >25/5 Clock
+          </Link>
         </div>
       </div>
     </nav>
