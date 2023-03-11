@@ -1,0 +1,21 @@
+.app__navbar {
+    position: absolute;
+    background-color: #ffffff15;
+    padding: 2rem;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    display: flex;
+    gap: 7rem;
+}
+
+.navbar__title {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.navbar__sections {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
