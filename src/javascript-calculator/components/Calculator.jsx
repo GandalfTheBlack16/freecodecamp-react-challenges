@@ -1,6 +1,6 @@
 import useCalculator from '../hooks/useCalculator'
 import Key from './Key'
-import { keyMap } from '../../shared/utils/constants'
+import { keyMap } from '../utils/keymap'
 import './Calculator.css'
 
 export default function Calculator () {

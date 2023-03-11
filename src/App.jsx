@@ -1,4 +1,4 @@
-import Footer from './shared/components/Footer'
+import Footer from './components/Footer'
 import './App.css'
 import Calculator from './javascript-calculator/components/Calculator'
 
