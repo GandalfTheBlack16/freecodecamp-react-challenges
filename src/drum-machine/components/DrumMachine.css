@@ -11,11 +11,11 @@
     max-width: 40%;
 }
 
-.drum {
+.drum-buttons button {
     height: 70px;
     width: 70px;
 }
 
-.drum:active {
+.drum-buttons button:active {
     background-color: #ffcd58;
 }

@@ -8,16 +8,17 @@ function DrumButton ({ keyValue, placeholder }) {
         document.getElementById(buttonId).click()
       }
     })
+
+    return () => document.removeEventListener('keydown')
   }, [])
 
-  function onClick () {
+  function onClick (event) {
     console.log(`Key ${placeholder} with id ${keyValue} pressed`)
   }
 
   return (
     <button
       id={buttonId}
-      className='drum'
       onClick={onClick}
 
     >{placeholder}
