@@ -1,0 +1,21 @@
+#drum-machine {
+    padding: 1rem;
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+}
+
+.drum-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    max-width: 40%;
+}
+
+.drum {
+    height: 70px;
+    width: 70px;
+}
+
+.drum:active {
+    background-color: #ffcd58;
+}

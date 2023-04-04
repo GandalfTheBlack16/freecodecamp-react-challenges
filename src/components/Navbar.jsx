@@ -24,6 +24,12 @@ export default function Navbar ({ selected }) {
         </div>
         <div>
           <Link
+            to='/drum-machine'
+          >Drum machine
+          </Link>
+        </div>
+        <div>
+          <Link
             to='/calculator'
           >Javascript calculator
           </Link>
